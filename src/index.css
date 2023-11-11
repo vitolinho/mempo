@@ -46,7 +46,7 @@
     @apply box-border;
   }
   body {
-    @apply bg-neutral-1 w-screen h-screen;
+    @apply bg-neutral-1 w-full h-screen;
   }
 }
 
