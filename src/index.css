@@ -21,6 +21,9 @@
   .heading-6 {
     @apply text-lg leading-[1.5rem] maglite uppercase tracking-[0.2em];
   }
+  .heading-7 {
+    @apply text-sm leading-[1rem] maglite uppercase tracking-[0.2em];
+  }
   .price {
     @apply text-xl leading-[2.25rem] lato uppercase;
   }
@@ -66,4 +69,8 @@
 
 .lato {
   font-family: Lato;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
