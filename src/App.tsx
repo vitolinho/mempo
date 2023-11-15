@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
 import img1 from "/1.png"
 import 'swiper/css';
+import Card from "../components/Card"
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -79,6 +80,22 @@ function App() {
           </SwiperSlide>
         </Swiper>
     </div>
+    <div className="flex flex-col items-center justify-center gap-y-10 px-5 mb-[10rem] lg:px-[3.25rem] lg:gap-y-20 lg:mb-[12.5rem]">
+      <p className="button-md text-neutral-3">メンポマスク</p>
+      <div className="w-full flex flex-col gap-y-8 lg:gap-y-[13.438rem]">
+        <div className="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
+          <Card/>
+          <Card/>
+          <Card/>
+        </div>
+        <div className="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
+          <Card/>
+          <Card/>
+          <Card/>
+        </div>
+      </div>
+    </div>
+    <div className="h-screen bg-blue-200"></div>
     </>
   )
 }
