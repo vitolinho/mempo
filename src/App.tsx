@@ -2,7 +2,8 @@ import { useState, useEffect } from "react"
 import { ParallaxBannerLayer, ParallaxBanner } from "react-scroll-parallax"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
-import img1 from "/bg1.png"
+import bg1 from "/bg1.png"
+import img1 from "/img1.png"
 import 'swiper/css';
 import Card from "../components/Card"
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <ParallaxBanner className="h-screen">
-        <ParallaxBannerLayer image={img1} speed={-16} className="z-0"/>
+        <ParallaxBannerLayer image={bg1} speed={-16} className="z-0"/>
       </ParallaxBanner>
       <div>
         <div className="flex justify-between items-center px-5 py-10 fixed top-0 w-full mix-blend-difference lg:px-[3.25rem] lg:py-15">
@@ -95,7 +96,19 @@ function App() {
         </div>
       </div>
     </div>
-    <div className="h-screen bg-blue-200"></div>
+    <div className="flex flex-col items-center gap-y-[3.75rem] py-20 mb-[10rem] lg:mb-[12.5rem]">
+      <p className="button-md text-neutral-3">メンポマスク</p>
+      <div className="w-full flex flex-col justify-center items-center gap-y-10 px-5 lg:px-[3.25rem]">
+        <div className="w-full flex flex-col justify-center items-center gap-y-10 lg:flex-row lg:justify-between">
+          <p className="heading-3 text-neutral-3 lg:heading-2">Mempo</p>
+          <p className="body-sm text-center text-neutral-2 lg:text-left lg:w-[12.5rem]">
+            The mempo mask, with its delicate curves and ancient patina, evokes the delectable promise of a visual experience
+          </p>
+        </div>
+        <img src={img1} alt="image of the red and blue mask" className="w-full"/>
+      </div>
+    </div>
+    <div className="h-screen bg-red-200"></div>
     </>
   )
 }
