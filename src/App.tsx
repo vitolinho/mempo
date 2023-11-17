@@ -5,7 +5,8 @@ import { Autoplay } from "swiper/modules"
 import bg1 from "/bg1.png"
 import img1 from "/img1.png"
 import 'swiper/css';
-import Card from "../components/Card"
+import Card from "../components/card"
+import Input from "../components/input"
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -47,37 +48,37 @@ function App() {
             <p>Quality one</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="/icons/samurai.svg"/>
           </SwiperSlide>
           <SwiperSlide className="heading-7 text-neutral-3 w-full flex justify-center items-end lg:heading-6">
             <p>Quality two</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="icons/samurai.svg"/>
           </SwiperSlide>
           <SwiperSlide className="heading-7 text-neutral-3 w-full flex justify-center items-end lg:heading-6">
             <p>Quality three</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="icons/samurai.svg"/>
           </SwiperSlide>
           <SwiperSlide className="heading-7 text-neutral-3 w-full flex justify-center items-end lg:heading-6">
             <p>Quality one</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="icons/samurai.svg"/>
           </SwiperSlide>
           <SwiperSlide className="heading-7 text-neutral-3 w-full flex justify-center items-end lg:heading-6">
             <p>Quality two</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="icons/samurai.svg"/>
           </SwiperSlide>
           <SwiperSlide className="heading-7 text-neutral-3 w-full flex justify-center items-end lg:heading-6">
             <p>Quality three</p>
           </SwiperSlide>
           <SwiperSlide className="w-full flex justify-center">
-            <img alt="samurai icon" src="/samurai.svg"/>
+            <img alt="samurai icon" src="icons/samurai.svg"/>
           </SwiperSlide>
         </Swiper>
     </div>
@@ -96,7 +97,7 @@ function App() {
         </div>
       </div>
     </div>
-    <div className="flex flex-col items-center gap-y-[3.75rem] py-20 mb-[10rem] lg:mb-[12.5rem]">
+    <div className="flex flex-col items-center gap-y-[3.75rem] py-20 mb-[10rem] lg:mb-[12.5rem] lg:py-[6.25rem]">
       <p className="button-md text-neutral-3">メンポマスク</p>
       <div className="w-full flex flex-col justify-center items-center gap-y-10 px-5 lg:px-[3.25rem]">
         <div className="w-full flex flex-col justify-center items-center gap-y-10 lg:flex-row lg:justify-between">
@@ -108,7 +109,14 @@ function App() {
         <img src={img1} alt="image of the red and blue mask" className="w-full"/>
       </div>
     </div>
-    <div className="h-screen bg-red-200"></div>
+    <div className="flex flex-col gap-y-[3.75rem] px-5 py-20 items-center bg-primary-1 mb-[10rem] lg:mb-[12.5rem] lg:px-[3.25rem] lg:py-[6.25rem]">
+      <div className="flex flex-col gap-y-10 items-center">
+        <p className="heading-5 text-neutral-0 lg:heading-4">subscribe</p>
+        <p className="body-md text-neutral-1 text-center">Be the first to know about new collections and exclusive offers</p>
+      </div>
+      <Input placeholder="email" className="lg:w-[25rem]"/>
+    </div>
+    <div className="bg-purple-200 h-screen"></div>
     </>
   )
 }
