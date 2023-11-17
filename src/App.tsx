@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules"
 import bg1 from "/bg1.png"
 import bg2 from "/bg2.png"
 import img1 from "/img1.png"
+import social from "/icons/social.svg"
 import 'swiper/css';
 import Card from "../components/card"
 import Input from "../components/input"
@@ -118,18 +119,6 @@ function App() {
       </div>
       <Input placeholder="email" className="lg:w-[25rem]"/>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <div className="relative mb-[10rem] lg:mb-[12.5rem]">
       <ParallaxBanner className="h-screen">
         <ParallaxBannerLayer image={bg2} speed={-16} className="z-0 ml-[-50rem] lg:ml-0"/>
@@ -144,7 +133,30 @@ function App() {
         <Button value="buy" variant="outline" className="lg:w-fit"/>
       </div>
     </div>
-    <div className="h-screen bg-blue-200"></div>
+    <div className="bg-primary-1">
+      <div className="flex flex-col items-center gap-y-20 px-5 py-10 lg:flex-row lg:justify-between lg:px-[3.25rem] lg:py-[6.25rem]">
+        <p className="button-md text-neutral-1">mempo</p>
+        <div className="w-full flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 lg:items-center lg:w-fit">
+          <p className="body-md text-neutral-1">newsletter</p>
+          <div className="flex flex-col gap-y-3 lg:flex-row lg:gap-x-5">
+            <Input placeholder="email"/>
+            <Button value="subscribe" variant="outline"/>
+          </div>
+        </div>
+        <div className="w-full flex flex-row justify-center items-center gap-x-5 lg:w-fit lg:gap-x-3">
+          <img src={social} alt="social icon" />
+          <img src={social} alt="social icon" />
+          <img src={social} alt="social icon" />
+        </div>
+      </div>
+      <div className="flex flex-col gap-y-10 px-5 py-10 items-start lg:px-[3.25rem] lg:pb-[6.25rem]">
+        <div className="w-full h-[0.031rem] bg-neutral-0"></div>
+        <div className="w-full flex flex-row justify-between text-neutral-1">
+          <p className="body-sm">© vitomirlaces</p>
+          <p className="body-sm">2023</p>
+        </div>
+      </div>
+    </div>
     </>
   )
 }
