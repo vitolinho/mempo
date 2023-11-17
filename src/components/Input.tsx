@@ -1,4 +1,4 @@
-import mailIcon from "/icons/mail.svg"
+import mailIcon from "../../public/icons/mail.svg"
 
 interface InputProperties {
   placeholder: string

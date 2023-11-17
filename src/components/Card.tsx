@@ -1,4 +1,4 @@
-import Button from "../components/Button.tsx"
+import Button from "./Button"
 
 interface CardProperties {
   img: string
