@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { ParallaxBannerLayer, ParallaxBanner } from "react-scroll-parallax"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
-import img1 from "/1.png"
+import img1 from "/bg1.png"
 import 'swiper/css';
 import Card from "../components/Card"
 
@@ -80,18 +80,18 @@ function App() {
           </SwiperSlide>
         </Swiper>
     </div>
-    <div className="flex flex-col items-center justify-center gap-y-10 px-5 mb-[10rem] lg:px-[3.25rem] lg:gap-y-20 lg:mb-[12.5rem]">
+    <div className="flex flex-col items-center gap-y-10 mb-[10rem] lg:gap-y-20 lg:mb-[12.5rem]">
       <p className="button-md text-neutral-3">メンポマスク</p>
-      <div className="w-full flex flex-col gap-y-8 lg:gap-y-[13.438rem]">
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
-          <Card/>
-          <Card/>
-          <Card/>
+      <div className="w-full flex flex-col items-center gap-y-8 lg:gap-y-5">
+        <div className="w-full flex flex-col gap-y-8 px-5 lg:flex-row lg:px-[3.25rem] lg:gap-x-5">
+          <Card img="/masks/1.png"/>
+          <Card img="/masks/2.png"/>
+          <Card img="/masks/3.png"/>
         </div>
-        <div className="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
-          <Card/>
-          <Card/>
-          <Card/>
+        <div className="w-full flex flex-col gap-y-8 px-5 lg:flex-row lg:px-[3.25rem] lg:gap-x-5">
+          <Card img="/masks/4.png"/>
+          <Card img="/masks/5.png"/>
+          <Card img="/masks/1.png"/>
         </div>
       </div>
     </div>
