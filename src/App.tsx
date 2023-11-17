@@ -3,10 +3,12 @@ import { ParallaxBannerLayer, ParallaxBanner } from "react-scroll-parallax"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
 import bg1 from "/bg1.png"
+import bg2 from "/bg2.png"
 import img1 from "/img1.png"
 import 'swiper/css';
 import Card from "../components/card"
 import Input from "../components/input"
+import Button from "../components/button"
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -24,7 +26,7 @@ function App() {
         <ParallaxBannerLayer image={bg1} speed={-16} className="z-0"/>
       </ParallaxBanner>
       <div>
-        <div className="flex justify-between items-center px-5 py-10 fixed top-0 w-full mix-blend-difference lg:px-[3.25rem] lg:py-15">
+        <div className="flex justify-between items-center px-5 py-10 fixed top-0 z-40 w-full mix-blend-difference lg:px-[3.25rem] lg:py-15">
             <a href="#" className="button-md text-white mix-blend-difference">mempo</a>
             <div className="flex flex-row gap-x-5 items-center mix-blend-difference lg:gap-x-[3.75rem]">
               <a href="#" className="button-md text-white mix-blend-difference">link 01</a>
@@ -116,7 +118,33 @@ function App() {
       </div>
       <Input placeholder="email" className="lg:w-[25rem]"/>
     </div>
-    <div className="bg-purple-200 h-screen"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div className="relative mb-[10rem] lg:mb-[12.5rem]">
+      <ParallaxBanner className="h-screen">
+        <ParallaxBannerLayer image={bg2} speed={-16} className="z-0 ml-[-50rem] lg:ml-0"/>
+      </ParallaxBanner>
+      <div className="w-full absolute bg-transparent top-0 h-screen flex flex-col gap-y-[3.75rem] px-5 py-20 justify-center lg:px-[3.25rem] lg:py-[6.25rem] lg: items-">
+        <p className="heading-3 text-neutral-0">
+          mempo
+        </p>
+        <p className="body-sm text-neutral-1 lg:w-[15rem]">
+          The mempo mask, with its delicate curves and ancient patina, evokes the delectable promise of a visual experience that transcends time, inviting wearers to step into a realm where history and artistry converge, creating a captivating narrative of cultural richness and aesthetic allure.
+        </p>
+        <Button value="buy" variant="outline" className="lg:w-fit"/>
+      </div>
+    </div>
+    <div className="h-screen bg-blue-200"></div>
     </>
   )
 }

@@ -1,3 +1,5 @@
+import Button from "../components/button"
+
 interface CardProperties {
   img: string
 }
@@ -11,13 +13,9 @@ const Card: React.FC<CardProperties> = ({ img }) => {
           <img src={img} alt="mask picture" />
           <p className="price text-neutral-2">0.00 €</p>
         </div>
-        <div className="flex flex-col gap-y-5 justify-center items-start w-[20rem]">
+        <div className="flex flex-col gap-y-5 justify-center items-start w-[20rem] lg:items-center">
           <p className="body-sm text-neutral-2">The mempo mask, with its delicate curves and ancient patina, evokes the delectable promise of a visual experience</p>
-          <div className="w-full flex justify-center">
-            <div className="w-full flex flex-row justify-center items-center px-8 py-3 bg-primary-1 cursor-pointer hover:bg-primary-0 lg:w-fit">
-              <p className="button-sm text-neutral-0">buy</p>
-            </div>
-          </div>
+          <Button value="buy" variant="default" className="lg:w-fit"/>
         </div>
       </div>
     </div>
