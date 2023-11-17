@@ -7,9 +7,9 @@ import bg2 from "/bg2.png"
 import img1 from "/img1.png"
 import social from "/icons/social.svg"
 import 'swiper/css';
-import Card from "../components/card.tsx"
-import Input from "../components/input.tsx"
-import Button from "../components/button.tsx"
+import Card from "../components/Bard.tsx"
+import Input from "../components/Input.tsx"
+import Button from "../components/Button.tsx"
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false)

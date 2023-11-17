@@ -1,4 +1,4 @@
-import Button from "../components/button"
+import Button from "./Button"
 
 interface CardProperties {
   img: string
