@@ -7,7 +7,7 @@ interface InputProperties {
 
 const Input: React.FC<InputProperties> = ({ placeholder, className }) => {
   const handleIconClick = () => {
-    const input = document.getElementById('input');
+    const input = document.getElementById('input')
     if (input) {
       input.focus()
     }
