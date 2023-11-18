@@ -16,6 +16,7 @@
 ## Tech Stack
 
 - [Typescript](https://www.typescriptlang.org) Language
+- [React.js](https://fr.react.dev/) Javascript Library
 - [Vite.js](https://vitejs.dev/)
 - Styling with [Tailwind CSS](https://tailwindcss.com)
 - Good practice with [ESlint](https://eslint.org)
