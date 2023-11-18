@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+<p align='center'>
+<img alt='logo' src='./public/bg2.png'>
+<p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align='center'>MEMPO MASKS</h1>
 
-Currently, two official plugins are available:
+<p align='left'>An online store of mempo masks.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align='left'>
+<a href='https://mempo-masks.vercel.app/'><strong>Visit the website</strong></a> .
+<a href='#tech-stack'><strong>Tech Stack</strong></a> .
+<a href='#author'><strong>Author</strong></a>
+</p>
+<br/>
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Typescript](https://www.typescriptlang.org) Language
+- [Vite.js](https://vitejs.dev/)
+- Styling with [Tailwind CSS](https://tailwindcss.com)
+- Good practice with [ESlint](https://eslint.org)
+- Deployed with [Vercel](https://vercel.com/)
+- Designed with [Figma](https://www.figma.com/)
+- [Midjourney](https://www.midjourney.com/) for very nice pictures
 
-- Configure the top-level `parserOptions` property like this:
+## Author
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- My self ([@vitolinho](https://github.com/vitolinho))
